@@ -1,6 +1,7 @@
 /* eslint-env node */
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
@@ -22,7 +23,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
   swcMinify: true,
-  trailingSlash: false,
+  trailingSlash: true, // 设置为 true 以便生成的静态文件的路径以斜杠结尾
   images: {
     remotePatterns: [
       {
@@ -33,7 +34,10 @@ const nextConfig = {
         hostname: 'source.unsplash.com',
       },
     ],
+    unoptimized: true, // 禁用图像优化
   },
+  output: 'export', // 将项目导出为静态文件
+  assetPrefix: isProd ? '/resume/' : '', // 为静态文件添加前缀
 };
 
 module.exports = nextConfig;
