@@ -11,18 +11,17 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import pi3 from '../images/portfolio/pi3.jpg';
+import fixedBG from '../images/IMG_1766.jpeg';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import homeImage from '../images/IMG_2565.jpeg';
-import mypic from '../images/StevensLinkedInHeadshotsFebruary2020-5.jpg';
+import dou1 from '../images/portfolio/dou1.jpg';
 import RainerRiver from '../images/portfolio/IMG_3108.jpeg';
 import MTrainer from '../images/portfolio/MTRainer.jpeg';
 import pi1 from '../images/portfolio/pi1.jpg';
-import dou1 from '../images/portfolio/dou1.jpg';
 import pi2 from '../images/portfolio/pi2.jpg';
-import pi3 from '../images/portfolio/pi3.jpg';
-import fixedBG from '../images/IMG_1766.jpeg';
-import resume from '../assets/resume.pdf';
+import mypic from '../images/StevensLinkedInHeadshotsFebruary2020-5.jpg';
 import {
   About,
   ContactSection,
@@ -224,21 +223,21 @@ export const experience: TimelineItem[] = [
     title: 'Apple',
     content: (
       <>
-        <p className='mb-2'>
+        <p className="mb-2">
           &#x2022; Used JavaScript, Redux, SCSS, and React.js to develop a new content management system to replace the
           old Adobe solution. Developed key features such as secure mode, tag modal, topic references, upload function,
           publish, and declassify.
         </p>
-        <p className='mb-2'>
+        <p className="mb-2">
           &#x2022; Built new web pages for users to upload and manage localized assets. Optimized the application by
           revamping the interface, and refactoring the code for clarity. Achieved a 30% reduction in build size through
           the replacement of inefficient packages.
         </p>
-        <p className='mb-2'>
+        <p className="mb-2">
           &#x2022; Worked closely with UX designers to enhance layout design. Consistently provided assistance to peers
           in resolving issues and bugs.
         </p>
-        <p >
+        <p>
           &#x2022; Improved the user experience by upgrading React.js to version 18, eliminating unnecessary API calls,
           and reducing re-render times by 60%.
         </p>
@@ -251,7 +250,7 @@ export const experience: TimelineItem[] = [
     title: 'Silicon, Inc.',
     content: (
       <>
-        <p className='mb-2'>
+        <p className="mb-2">
           &#x2022; Worked with clients to develop features, and reusable components using React.js and HTML. Refactored
           and improved old components with React Hooks, ES6. Decorated new layouts and animations using CSS. Developed
           responsive design using CSS Media Queries.
@@ -269,7 +268,7 @@ export const experience: TimelineItem[] = [
     title: 'Global Resource & Technology Development Inc.',
     content: (
       <>
-        <p className='mb-2'>
+        <p className="mb-2">
           &#x2022; Implemented company website using WordPress. Designed and developed the website structure. Built
           slides using selected pictures and WordPress plugins. Worked on the SEO, improved the presence of the website
           by 30%.

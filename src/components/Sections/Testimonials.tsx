@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
 import {SectionId, testimonial} from '../../data/data';
@@ -11,7 +11,7 @@ import Section from '../Layout/Section';
 
 const Testimonials: FC = memo(() => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [scrollValue, setScrollValue] = useState(0);
+  // const [scrollValue, setScrollValue] = useState(0);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
 
   const itemWidth = useRef(0);
@@ -40,7 +40,7 @@ const Testimonials: FC = memo(() => {
       const newIndex = Math.round(scrollContainer.current.scrollLeft / itemWidth.current);
       setActiveIndex(newIndex);
     }
-  }, [itemWidth, scrollValue]);
+  }, [itemWidth]);
 
   const setTestimonial = useCallback(
     (index: number) => () => {
@@ -58,9 +58,9 @@ const Testimonials: FC = memo(() => {
     }
   }, [activeIndex, setTestimonial, testimonials.length]);
 
-  const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
-    setScrollValue(event.currentTarget.scrollLeft);
-  }, []);
+  // const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
+  //   setScrollValue(event.currentTarget.scrollLeft);
+  // }, []);
 
   useInterval(next, 10000);
 
