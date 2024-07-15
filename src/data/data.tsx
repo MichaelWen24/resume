@@ -39,7 +39,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume ',
+  title: 'Yining Wen Resume ',
   description: "Site built with Tim Baker's react resume template",
 };
 
