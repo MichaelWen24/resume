@@ -9,13 +9,13 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import pi3 from '../images/portfolio/pi3.jpg';
 import fixedBG from '../images/IMG_1766.jpeg';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import homeImage from '../images/IMG_2565.jpeg';
+import homeImage from '../images/IMG_4473.jpeg';
 import dou1 from '../images/portfolio/dou1.jpg';
 import RainerRiver from '../images/portfolio/IMG_3108.jpeg';
 import MTrainer from '../images/portfolio/MTRainer.jpeg';
@@ -100,12 +100,12 @@ export const aboutData: About = {
   profileImageSrc: mypic,
   description: `Experienced front-end developer with more than three years of expertise in React.js, JavaScript, TypeScript, Angular, HTML, and CSS. A collaborative team player, consistently delivering innovative solutions to drive business success.`,
   aboutItems: [
-    {label: 'Location', text: 'Austin, TX', Icon: MapIcon},
+    {label: 'Location', text: 'Redmond, WA', Icon: MapIcon},
     {label: 'Age', text: '30', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Chinese', Icon: FlagIcon},
     {label: 'Interests', text: 'Travel', Icon: SparklesIcon},
     {label: 'Study', text: 'Stevens Institute of Technology', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Apple via Silicon, Inc.', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Silicon, Inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -165,21 +165,18 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Content Management System, Eikon',
     description:
       "Eikon is a single-page application, it's a content management system. Eikon is built with JavaScript, React.js, React Hooks, Redux, SCSS, and Ant-design, configured by Vite, partially tested by Vitest and React testing library.",
-    url: '',
     image: MTrainer,
   },
   {
     title: 'Content Management System, OneDAM',
     description:
       'Integrated reusable components using TypeScript and Angular.js, revamped outdated components, and fixed bugs. Collaborated closely with UX designers to enhance layout design and improve user experience.',
-    url: '',
     image: dou1,
   },
   {
     title: 'Tag Management System',
     description:
       'Integrated new features using JavaScript, React.js, Redux. Revamped the styling of the website with HTML and CSS. Worked closely with UI team and QA team to validate new features and fix bugs. Used Jest to write simple unit test cases for new features.',
-    url: '',
     image: pi1,
   },
   {
@@ -193,7 +190,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Omnifood',
     description:
       'Designed the front-end home page for a food delivery website. Used HTML to implement the structure. Used CSS to build high-level animation effects on pictures and decorated the entire page with effects.',
-    url: '',
+    url: 'https://github.com/MichaelWen24/OmnifoodProject',
     image: RainerRiver,
   },
 ];
@@ -218,8 +215,26 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Jul 2021 - Present',
-    location: 'UI Developer Contractor',
+    date: 'Dec 2020 - Present',
+    location: 'UI Developer',
+    title: 'Silicon, Inc.',
+    content: (
+      <>
+        <p className="mb-2">
+          &#x2022; Worked with clients to develop features, and reusable components using React.js and HTML. Refactored
+          and improved old components with React Hooks, ES6. Decorated new layouts and animations using CSS. Developed
+          responsive design using CSS Media Queries.
+        </p>
+        <p>
+          &#x2022; Participated in the Software Development Life Cycle, including requirement analysis, coding, testing,
+          and maintenance.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: 'Jul 2021 - Oct 2024',
+    location: 'UI Developer Contractor via Silicon, Inc',
     title: 'Apple',
     content: (
       <>
@@ -240,24 +255,6 @@ export const experience: TimelineItem[] = [
         <p>
           &#x2022; Improved the user experience by upgrading React.js to version 18, eliminating unnecessary API calls,
           and reducing re-render times by 60%.
-        </p>
-      </>
-    ),
-  },
-  {
-    date: 'Dec 2020 - Present',
-    location: 'UI Developer',
-    title: 'Silicon, Inc.',
-    content: (
-      <>
-        <p className="mb-2">
-          &#x2022; Worked with clients to develop features, and reusable components using React.js and HTML. Refactored
-          and improved old components with React Hooks, ES6. Decorated new layouts and animations using CSS. Developed
-          responsive design using CSS Media Queries.
-        </p>
-        <p>
-          &#x2022; Participated in the Software Development Life Cycle, including requirement analysis, coding, testing,
-          and maintenance.
         </p>
       </>
     ),
@@ -312,14 +309,14 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Austin, TX',
-      href: 'https://www.google.ca/maps/place/Austin,+TX/@30.3076576,-97.920549,11z/data=!3m1!4b1!4m6!3m5!1s0x8644b599a0cc032f:0x5d9b464bd469d57a!8m2!3d30.267153!4d-97.7430608!16zL20vMHZ6bQ?entry=ttu',
+      text: 'Redmond, WA',
+      href: 'https://maps.app.goo.gl/nArQ3WzU2BnAhsiGA',
     },
-    {
-      type: ContactType.Instagram,
-      text: '@michaelynwen',
-      href: 'https://www.instagram.com/michaelynwen/',
-    },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@michaelynwen',
+    //   href: 'https://www.instagram.com/michaelynwen/',
+    // },
     {
       type: ContactType.Github,
       text: 'MichaelWen24',
@@ -335,6 +332,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MichaelWen24'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: ''},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn24/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/michaelynwen/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/michaelynwen/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
