@@ -12,7 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import pi3 from '../images/portfolio/pi3.jpg';
-import fixedBG from '../images/IMG_1766.jpeg';
+import fixedBG from '../images/IMG_4638.jpeg';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import homeImage from '../images/IMG_4473.jpeg';
@@ -216,7 +216,7 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'Dec 2020 - Present',
-    location: 'UI Developer',
+    location: 'Front-End Engineer',
     title: 'Silicon, Inc.',
     content: (
       <>
@@ -261,7 +261,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'Jul 2020 - Nov 2020',
-    location: 'UI Developer',
+    location: 'Software Engineer',
     title: 'Global Resource & Technology Development Inc.',
     content: (
       <>
