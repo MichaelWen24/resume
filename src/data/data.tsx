@@ -40,7 +40,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Yining Wen Resume ',
-  description: "Site built with Tim Baker's react resume template",
+  description: "Yining Wen's Resume",
 };
 
 /**
@@ -68,8 +68,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Front End Software Engineer</strong>, currently working at{' '}
-        <strong className="text-stone-100">Apple</strong> helping build a modern content management system.
+        I'm a <strong className="text-stone-100">Full Stack Engineer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Walmart</strong> helping upgrade the main website.
       </p>
       {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
@@ -98,10 +98,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: mypic,
-  description: `Experienced front-end developer with more than three years of expertise in React.js, JavaScript, TypeScript, Angular, HTML, and CSS. A collaborative team player, consistently delivering innovative solutions to drive business success.`,
+  description: `Experienced software engineer with four years of expertise in front‑end technologies including React.js, JavaScript, TypeScript, Angular, HTML, and CSS, along with hands‑on experience in back‑end development using Node.js and working with RESTful APIs, GraphQL, SQL/NoSQL databases, and cloud-based deployment. A collaborative team player who consistently delivers scalable and innovative solutions to drive business success.`,
   aboutItems: [
     {label: 'Location', text: 'Redmond, WA', Icon: MapIcon},
-    {label: 'Age', text: '30', Icon: CalendarIcon},
+    {label: 'Age', text: '31', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Chinese', Icon: FlagIcon},
     {label: 'Interests', text: 'Travel', Icon: SparklesIcon},
     {label: 'Study', text: 'Stevens Institute of Technology', Icon: AcademicCapIcon},
@@ -127,7 +127,24 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Back-End development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 7,
+      },
+      {
+        name: 'RESTful API',
+        level: 6,
+      },
+      {
+        name: 'GraphQL',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Front-End development',
     skills: [
       {
         name: 'React',
@@ -147,11 +164,24 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Typescript',
-        level: 6,
+        level: 7,
       },
       {
         name: 'Angular',
-        level: 6,
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'DevOps',
+    skills: [
+      {
+        name: 'Docker',
+        level: 4,
+      },
+      {
+        name: 'Kubernetes',
+        level: 4,
       },
     ],
   },
@@ -215,26 +245,29 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Dec 2020 - Present',
-    location: 'Front-End Engineer',
-    title: 'Silicon, Inc.',
+    date: 'Mar 2025 - Present',
+    location: 'Full-Stack Engineer',
+    title: 'Walmart.',
     content: (
       <>
         <p className="mb-2">
-          &#x2022; Worked with clients to develop features, and reusable components using React.js and HTML. Refactored
-          and improved old components with React Hooks, ES6. Decorated new layouts and animations using CSS. Developed
-          responsive design using CSS Media Queries.
+          &#x2022; Developed modular and reusable components for the Walmart website using React.js, enhancing front‑end
+          flexibility and maintainability. Built and optimized microservices in Node.js and TypeScript.
+        </p>
+        <p className="mb-2">
+          &#x2022; Implemented unit testing with Jest and React testing library, ensuring robust coverage. Provided
+          RESTful APIs and occasional GraphQL support for varied data needs.
         </p>
         <p>
-          &#x2022; Participated in the Software Development Life Cycle, including requirement analysis, coding, testing,
-          and maintenance.
+          &#x2022; Collaborated within an Agile environment, coordinating with product, business, and automation teams
+          to deliver end-to-end solutions.
         </p>
       </>
     ),
   },
   {
     date: 'Jul 2021 - Oct 2024',
-    location: 'UI Developer Contractor via Silicon, Inc',
+    location: 'Front-End Engineer Contractor via Silicon, Inc',
     title: 'Apple',
     content: (
       <>
@@ -255,6 +288,24 @@ export const experience: TimelineItem[] = [
         <p>
           &#x2022; Improved the user experience by upgrading React.js to version 18, eliminating unnecessary API calls,
           and reducing re-render times by 60%.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: 'Dec 2020 - Present',
+    location: 'Software Engineer',
+    title: 'Silicon, Inc.',
+    content: (
+      <>
+        <p className="mb-2">
+          &#x2022; Worked with clients to develop features, and reusable components using React.js and HTML. Refactored
+          and improved old components with React Hooks, ES6. Decorated new layouts and animations using CSS. Developed
+          responsive design using CSS Media Queries.
+        </p>
+        <p>
+          &#x2022; Participated in the Software Development Life Cycle, including requirement analysis, coding, testing,
+          and maintenance.
         </p>
       </>
     ),
@@ -331,7 +382,7 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MichaelWen24'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: ''},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn24/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn25/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/michaelynwen/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
