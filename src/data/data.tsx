@@ -16,6 +16,11 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import homeImage from '../images/IMG_4473.jpeg';
 // import pi3 from '../images/portfolio/pi3.jpg';
 import fixedBG from '../images/IMG_4638.jpeg';
+import img2567 from '../images/IMG_2567.jpeg';
+import img2565 from '../images/IMG_2565.jpeg';
+import img4434 from '../images/IMG_4434.jpeg';
+import img4329 from '../images/IMG_4329.jpeg';
+import img6599 from '../images/IMG_6599.jpeg';
 import dou1 from '../images/portfolio/dou1.jpg';
 import RainerRiver from '../images/portfolio/IMG_3108.jpeg';
 import MTrainer from '../images/portfolio/MTRainer.jpeg';
@@ -63,21 +68,9 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: homeImage,
+  imageSrc: [homeImage, img6599, img4434, img4329, img2567, img2565],
   name: `I'm Yining Wen.`,
-  description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Engineer</strong>, currently working at{' '}
-        <strong className="text-stone-100">Walmart</strong> helping upgrade the main website.
-      </p>
-      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p> */}
-    </>
-  ),
+  description: `I'm a Full Stack Engineer, currently working at Walmart helping upgrade the main website.`,
   actions: [
     {
       href: '/assets/YiningWenResume.pdf',
@@ -246,17 +239,21 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'Mar 2025 - Present',
-    location: 'Full-Stack Engineer',
+    location: 'Full-Stack Engineer Contractor via Silicon, Inc',
     title: 'Walmart.',
     content: (
       <>
         <p className="mb-2">
           &#x2022; Developed modular and reusable components for the Walmart website using React.js, enhancing front‑end
-          flexibility and maintainability. Built and optimized microservices in Node.js and TypeScript.
+          flexibility and maintainability. Built and optimized microservices in Node.js and TypeScript. Provided GraphQL
+          APIs support for varied data needs.
         </p>
         <p className="mb-2">
-          &#x2022; Implemented unit testing with Jest and React testing library, ensuring robust coverage. Provided
-          RESTful APIs and occasional GraphQL support for varied data needs.
+          &#x2022; Implemented unit tests with Jest and React Testing Library, and developed E2E (end-to-end) tests
+          using Puppeteer to ensure robust coverage and application reliability.
+        </p>
+        <p className="mb-2">
+          &#x2022; Migrated logging infrastructure from Splunk to OpenObserve and managed successful weekly deployments.
         </p>
         <p>
           &#x2022; Collaborated within an Agile environment, coordinating with product, business, and automation teams

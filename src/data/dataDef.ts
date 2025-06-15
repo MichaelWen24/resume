@@ -1,5 +1,5 @@
 import {StaticImageData} from 'next/image';
-import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
+import React, {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
@@ -21,17 +21,15 @@ export interface HomepageMeta {
  * Hero section
  */
 export interface Hero {
-  imageSrc: string;
+  imageSrc: string | StaticImageData | (string | StaticImageData)[];
   name: string;
-  description: JSX.Element;
-  actions: HeroActionItem[];
-}
-
-interface HeroActionItem {
-  href: string;
-  text: string;
-  primary?: boolean;
-  Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
+  description: string;
+  actions: {
+    href: string;
+    text: string;
+    primary: boolean;
+    Icon?: React.ElementType;
+  }[];
 }
 
 /**
@@ -80,7 +78,7 @@ export interface PortfolioItem {
   title: string;
   description: string;
   url?: string;
-  image: string | StaticImageData;
+  image?: string | StaticImageData;
 }
 
 /**
