@@ -54,7 +54,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Projects: 'projects',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -64,7 +64,7 @@ export const SectionId = {
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
- * Hero section
+ * Hero carousel section
  */
 export const heroData: Hero = {
   imageSrc: [homeImage, img6599, img4434, img2567, img2565],
@@ -180,9 +180,9 @@ export const skills: SkillGroup[] = [
 ];
 
 /**
- * Portfolio section
+ * Projects section
  */
-export const portfolioItems: PortfolioItem[] = [
+export const projectsItems: PortfolioItem[] = [
   {
     title: 'Content Management System, Eikon',
     description:
@@ -239,7 +239,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'Mar 2025 - Present',
     location: 'Full-Stack Engineer Contractor via Silicon, Inc',
-    title: 'Walmart.',
+    title: 'Walmart',
     content: (
       <>
         <p className="mb-2">
