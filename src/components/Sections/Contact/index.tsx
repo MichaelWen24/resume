@@ -33,7 +33,7 @@ const Contact: FC = memo(() => {
           <h2 className="text-2xl font-bold text-white">{headerText}</h2>
         </div>
         <div className="grid grid-cols-1 gap-6 ">
-        {/* md:grid-cols-2 */}
+          {/* md:grid-cols-2 */}
           {/* <div className="order-2 col-span-1 md:order-1 ">
             <ContactForm />
           </div> */}

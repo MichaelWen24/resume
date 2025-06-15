@@ -1,9 +1,10 @@
 import classNames from 'classnames';
 import {FC, memo} from 'react';
+
 import {heroData, SectionId} from '../../data/data';
+import Carousel from '../common/Carousel';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
-import Carousel from '../common/Carousel';
 
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, actions} = heroData;
@@ -13,7 +14,7 @@ const Hero: FC = memo(() => {
     <Section noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Carousel images={images} altPrefix={name} />
+          <Carousel altPrefix={name} images={images} />
         </div>
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">

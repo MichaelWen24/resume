@@ -11,14 +11,14 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import img2565 from '../images/IMG_2565.jpeg';
+import img2567 from '../images/IMG_2567.jpeg';
+import img4434 from '../images/IMG_4434.jpeg';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import homeImage from '../images/IMG_4473.jpeg';
 // import pi3 from '../images/portfolio/pi3.jpg';
 import fixedBG from '../images/IMG_4638.jpeg';
-import img2567 from '../images/IMG_2567.jpeg';
-import img2565 from '../images/IMG_2565.jpeg';
-import img4434 from '../images/IMG_4434.jpeg';
 import img6599 from '../images/IMG_6599.jpeg';
 import dou1 from '../images/portfolio/dou1.jpg';
 import RainerRiver from '../images/portfolio/IMG_3108.jpeg';
