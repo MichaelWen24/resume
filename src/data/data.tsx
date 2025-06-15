@@ -19,7 +19,6 @@ import fixedBG from '../images/IMG_4638.jpeg';
 import img2567 from '../images/IMG_2567.jpeg';
 import img2565 from '../images/IMG_2565.jpeg';
 import img4434 from '../images/IMG_4434.jpeg';
-import img4329 from '../images/IMG_4329.jpeg';
 import img6599 from '../images/IMG_6599.jpeg';
 import dou1 from '../images/portfolio/dou1.jpg';
 import RainerRiver from '../images/portfolio/IMG_3108.jpeg';
@@ -68,7 +67,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: [homeImage, img6599, img4434, img4329, img2567, img2565],
+  imageSrc: [homeImage, img6599, img4434, img2567, img2565],
   name: `I'm Yining Wen.`,
   description: `I'm a Full Stack Engineer, currently working at Walmart helping upgrade the main website.`,
   actions: [
