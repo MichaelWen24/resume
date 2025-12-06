@@ -106,36 +106,6 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'Chinese(Mandarin)',
-        level: 10,
-      },
-      {
-        name: 'English',
-        level: 8,
-      },
-    ],
-  },
-  {
-    name: 'Back-End development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 7,
-      },
-      {
-        name: 'RESTful API',
-        level: 6,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
     name: 'Front-End development',
     skills: [
       {
@@ -165,15 +135,53 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Back-End development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 7,
+      },
+      {
+        name: 'RESTful API',
+        level: 6,
+      },
+      {
+        name: 'GraphQL',
+        level: 6,
+      },
+      {
+        name: 'Python',
+        level: 5,
+      },
+      {
+        name: 'Scala',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'Chinese(Mandarin)',
+        level: 10,
+      },
+      {
+        name: 'English',
+        level: 8,
+      },
+    ],
+  },
+  {
     name: 'DevOps',
     skills: [
       {
         name: 'Docker',
-        level: 4,
+        level: 5,
       },
       {
         name: 'Kubernetes',
-        level: 4,
+        level: 5,
       },
     ],
   },
@@ -254,9 +262,13 @@ export const experience: TimelineItem[] = [
         <p className="mb-2">
           &#x2022; Migrated logging infrastructure from Splunk to OpenObserve and managed successful weekly deployments.
         </p>
-        <p>
+        <p className="mb-2">
           &#x2022; Collaborated within an Agile environment, coordinating with product, business, and automation teams
           to deliver end-to-end solutions.
+        </p>
+        <p>
+          &#x2022; Built data services for social eCommerce features with Apache Airflow, Spark, Astro, Python, and
+          Scala to refresh Hive datasets daily and supply trusted data for international markets.
         </p>
       </>
     ),

@@ -25,8 +25,8 @@ export interface Hero {
   name: string;
   description: string;
   actions: {
-    href: string;
-    text: string;
+  href: string;
+  text: string;
     primary: boolean;
     Icon?: React.ElementType;
   }[];
