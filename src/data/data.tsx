@@ -390,7 +390,7 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MichaelWen24'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: ''},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn25/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn24/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/michaelynwen/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
