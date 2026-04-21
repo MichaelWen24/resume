@@ -51,8 +51,10 @@ const Carousel: FC<CarouselProps> = memo(({images, interval = 5000, altPrefix = 
         <Image
           alt={`${altPrefix}-${current}`}
           className="h-full w-full object-cover"
-          placeholder="blur"
-          priority
+          loading={current === 0 ? 'eager' : 'lazy'}
+          placeholder={typeof images[current] === 'string' ? 'empty' : 'blur'}
+          priority={current === 0}
+          sizes="100vw"
           src={images[current]}
         />
       </div>

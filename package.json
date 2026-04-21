@@ -11,6 +11,7 @@
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev --webpack",
+    "optimize:hero-images": "node ./scripts/optimize-hero-images.mjs",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap"
@@ -55,6 +56,7 @@
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "sass": "^1.83.0",
+    "sharp": "^0.34.5",
     "sort-package-json": "^2.10.1",
     "stylelint": "^16.10.0",
     "stylelint-config-recommended": "^14.0.1",
