@@ -266,9 +266,11 @@ export const experience: TimelineItem[] = [
           &#x2022; Collaborated within an Agile environment, coordinating with product, business, and automation teams
           to deliver end-to-end solutions.
         </p>
+        <p className="mb-2">
+          &#x2022; Led end-to-end development of social eCommerce features as the sole engineer, integrating frontend components with backend services.
+        </p>
         <p>
-          &#x2022; Built data services for social eCommerce features with Apache Airflow, Spark, Astro, Python, and
-          Scala to refresh Hive datasets daily and supply trusted data for international markets.
+          &#x2022; Built GCP-based data pipelines using Python, Scala, Spark, and Airflow to enable data-driven automation and analytics.
         </p>
       </>
     ),
