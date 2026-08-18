@@ -3,6 +3,9 @@
   "name": "react-resume-template",
   "version": "2.0.0",
   "private": true,
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
     "predeploy": "yarn build",
     "export": "next export",
@@ -66,7 +69,8 @@
     "typescript": "^6.0.3"
   },
   "resolutions": {
-    "autoprefixer": "10.5.0"
+    "autoprefixer": "10.5.0",
+    "fast-uri": "3.1.5"
   },
   "overrides": {
     "minimatch@^3.0.0": "3.1.5",
