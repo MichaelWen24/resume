@@ -71,6 +71,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       )}
       href={url}
       onClick={handleItemClick}
+      rel="noreferrer"
       ref={linkRef}
       target="_blank">
       <div className="relative h-full w-full p-4">
