@@ -47,7 +47,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Houston, TX', Icon: MapIcon},
     {label: 'Experience', text: '5+ years', Icon: CalendarIcon},
-    {label: 'Focus', text: 'Full-stack web platforms', Icon: SparklesIcon},
+    {label: 'Focus', text: 'Frontend-led web platforms', Icon: SparklesIcon},
     {label: 'Languages', text: 'English & Mandarin', Icon: SparklesIcon},
     {label: 'Study', text: 'Stevens Institute of Technology', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Bot Auto', Icon: BuildingOffice2Icon},
@@ -79,5 +79,5 @@ export const contact: ContactSection = {
 
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MichaelWen24'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn24/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/wenyn24/', openInNewTab: true},
 ];

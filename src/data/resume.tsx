@@ -165,6 +165,27 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
+    date: 'Dec 2020 - Sep 2026',
+    location: 'Software Engineer',
+    title: 'Silicon, Inc.',
+    content: (
+      <>
+        <p className="mb-2">
+          &#x2022; Built and maintained responsive web pages and reusable frontend components for client projects using
+          React, JavaScript, HTML, and CSS.
+        </p>
+        <p className="mb-2">
+          &#x2022; Refactored existing interfaces and implemented new layouts to improve usability and maintainability
+          across web applications.
+        </p>
+        <p>
+          &#x2022; Collaborated with designers, product teams, and engineers throughout requirements, development,
+          testing, and release.
+        </p>
+      </>
+    ),
+  },
+  {
     date: 'Jul 2020 - Oct 2020',
     location: 'Software Engineer Intern',
     title: 'Global Resource & Technology Development Inc.',
