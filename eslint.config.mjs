@@ -1,6 +1,5 @@
 import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
 import nextTypeScript from 'eslint-config-next/typescript';
-import reactMemo from 'eslint-plugin-react-memo';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 export default [
@@ -12,13 +11,10 @@ export default [
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: {
-      'react-memo': reactMemo,
       'simple-import-sort': simpleImportSort,
     },
     rules: {
       'react/display-name': 'off',
-      'react-memo/require-usememo': 'error',
-      'react-memo/require-memo': 'error',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/member-ordering': [
         'warn',

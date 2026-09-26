@@ -1,5 +1,4 @@
-import 'tailwindcss/tailwind.css';
-import '../globalStyles.scss';
+import '../globalStyles.css';
 
 import type {AppProps} from 'next/app';
 import type {ReactElement} from 'react';

@@ -2,30 +2,27 @@ import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
-import About from '../components/Sections/About';
-import Contact from '../components/Sections/Contact';
-import Footer from '../components/Sections/Footer';
-import Hero from '../components/Sections/Hero';
-import Projects from '../components/Sections/Projects';
-import Resume from '../components/Sections/Resume';
-import Testimonials from '../components/Sections/Testimonials';
-import {homePageMeta} from '../data/data';
+import AboutSection from '../components/Sections/AboutSection';
+import ContactSection from '../components/Sections/ContactSection';
+import HeroSection from '../components/Sections/HeroSection';
+import ProjectsSection from '../components/Sections/ProjectsSection';
+import ResumeSection from '../components/Sections/ResumeSection';
+import SiteFooter from '../components/Sections/SiteFooter';
+import {homePageMeta} from '../data/profile';
 
-// eslint-disable-next-line react-memo/require-memo
-const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
+const SiteHeader = dynamic(() => import('../components/Sections/SiteHeader'), {ssr: false});
 
 const Home: FC = memo(() => {
   const {title, description} = homePageMeta;
   return (
     <Page description={description} title={title}>
-      <Header />
-      <Hero />
-      <About />
-      <Resume />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
+      <SiteHeader />
+      <HeroSection />
+      <AboutSection />
+      <ResumeSection />
+      <ProjectsSection />
+      <ContactSection />
+      <SiteFooter />
     </Page>
   );
 });

@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {socialLinks} from '../data/data';
+import {socialLinks} from '../data/profile';
 
 const Socials: FC = memo(() => {
   return (
